@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Select</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #f1f1f1;
+        }
+        .klass{
+            color: red;
+        }
+        #testID{
+            color: blue;
+        }
+        li span{
+            color: green;
+        }
+        li>span{
+            color: orange;
+        }
+        #testID+li{
+            background: #ccc;
+        }
+        #testID~li{
+            background: #ccc;
+        }
+        #testID,.klass{
+            background: #ccc;
+        }
+        li[data]{
+            background: #ccc;
+        }
+        li:not(#testID){
+            font-size: 12px;
+        }
+        li a:link{
+            color: blue;
+        }
+        li a:visited{
+            color: blue;
+        }
+        li a:hover{
+            color: red;
+        }
+        li a:active{
+            color: yellow;
+        }
+        #testID::before{
+            content:'A'
+        }
+        #testID::after{
+            content:'D'
+        }
+        #testID::first-letter{
+            color: #333;
+        }
+        #testID::first-line{
+            background: #f1f1f1;
+        }
+        li:first-child::after{
+            content: 'first-child';
+        }
+        li:last-child::after{
+            content:'last-child'
+        }
+        li:nth-child(4){
+            font-size: 12px;
+        }
+        .a .b{
+            color: coral;
+        }
+        .a.b{
+            color: pink;
+        }
+        .a,.c{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li data="attr-data">1</li>
+        <li class="klass">2</li>
+        <li class="klass">3</li>
+        <li id="testID">4</li>
+        <li><span>5</span></li>
+        <li><span>6</span></li>
+        <li><a href="http://www.baidu.com">百度</a></li>
+    </ul>
+    <div class="a b ">文字</div>
+    <div class="a">文字
+        <div class="b">文字</div>
+    </div>
+    <div class="c">文字</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.text-test{
+    color: #35b558;
+    font-size: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* 将字体设置为斜体 */
+    font-style: italic;
+    /* 把某元素的粗细程度定义为正常 */
+    font-weight: 400;
+    /* font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif; */
+    line-height: 1.5;
+    /* 文本在容器中居中 */
+    text-align: center;
+    letter-spacing: 5px;
+    text-indent: 20px;
+    /* 文字不换行 */
+    white-space: nowrap;
+    word-break: break-all;
+}
+a{
+    text-decoration: none;
+}
