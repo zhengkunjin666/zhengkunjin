@@ -1,0 +1,327 @@
+/* 1.样式重设 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 3.整体布局 */
+html,body{
+    height: 100%;
+}
+/* 2.字体设置 */
+body{
+    /* 3.整体布局 */
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-family: arial;
+}
+/* 4.导航样式 */
+.page-header{
+    display: inline-flex;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    font-size: 0;
+}
+ul li{
+    display: inline-block;
+    margin: 0;
+    padding-right: 20px;
+    list-style: none;
+    font-size: 13px;
+}
+ul li a{
+    color: rgba(0,0,0,.75);
+    text-decoration: none;
+}
+ul li a span{
+    color: #ff5a34;
+}
+ul li a:hover{
+    color: #ff5a34;
+    opacity: 0.8;
+}
+/* 设置下拉按钮的样式 */
+.dropbtn{
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.i-btn{
+    width: 0;
+    height: 0;
+    border-left: 4px dashed transparent;
+    border-top: 4px solid #666;
+    border-right: 4px dashed transparent;
+    display: inline-block;
+    position:absolute;
+    top: 50%;
+    margin-top: -2px;
+    left: 108%;
+}
+/* 显示下拉内容时，更改下拉按钮和三角形的颜色 */
+.dropdown .dropbtn:hover{
+    color: #ff5a34;
+    opacity: 0.8;
+}
+.dropdown .dropbtn:hover .i-btn{
+    border-top: 4px solid #ff5a34;
+}
+/* 容器<div>-需要放置下拉内容 */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+/* 下拉内容（默认隐藏） */
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 1px 8px 0px rgb(0 0 0 / 10%);
+    text-align: center;
+    top: 20px;
+    right: -75%;
+    z-index: 1;
+}
+/* 下拉链接 */
+.dropdown-content a{
+    color: black;
+    text-decoration: none;
+    display:inline-block;
+}
+/* 悬停时更改下拉链接的颜色 */
+.dropdown-content a:hover{
+    background: #ff5a34;
+    color: white;
+    width: 55px;
+}
+/* 悬停时显示下拉菜单和三角形的翻转 */
+.dropdown:hover .dropdown-content{
+    display: block;
+    margin: 0;
+    line-height: 28px;
+    width: 55px; 
+}
+.dropdown:hover .i-btn{
+    transform: rotateZ(180deg);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+}
+/* 显示下拉内容时，更改下拉按钮的背景颜色 */
+/* .dropdown:hover .dropbtn{
+    color: #ff5a34;
+    opacity: 0.8;
+} */
+/* 右边导航样式 */
+.nav-right{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+.nav-right .login{
+    background: #ff5a34;
+    color: #FFFFFF;
+    padding:  6px 10px;
+    font-size: 12px;
+    margin-right: 20px;
+    line-height: 24px;
+}
+.nav-right a:first-child{
+    float: left;
+    color: #000;
+    opacity: .75;
+    padding-right: 20px;
+    margin-right: 10px;
+    border-right: 1px solid #e7e7e7;
+    line-height: 14px;
+    position: relative;
+    top: 5px;
+    font-size: 12px;
+}
+.address,.img,.temperature{
+    font-size: 12px;
+    padding-right: 6px;
+}
+.address{
+    padding-left: 10px;
+}
+.img{
+    position: relative;
+    top: 3px;
+}
+.temperature{
+    padding-right: 20px;
+    margin-right: 10px;
+    border-right: 1px solid #e7e7e7;
+    position: relative;
+}
+
+
+
+/* 主体样式 */
+.page-mainer{
+    flex: 1;
+    text-align: center;
+    margin-top: 100px;
+}
+/* 主体图片 */
+.page-mainer .loga-container img{
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    width: 440px;
+    height: 140px;
+}
+/* 主体表单 */
+.form-container form{
+    display: flex;
+    justify-content: center;
+}
+.form-container .form-search{
+    display: inline-block;
+    width: 489px;
+    position: relative;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    height: 42px;
+    border: 1px solid #ababab;
+    background: #FFFFFF;
+    border-right: 0;
+}
+.form-container .form-search:focus-visible{
+    outline: none;
+    /* border: 1px solid #000; */
+    /* border-right: 0; */
+}
+/* 表单按钮 */
+.form-container .submit-btn{
+    width: 99px;
+    height: 44px;
+    border:  1px solid #ababab;
+    background: #FAFAFA;
+    display: block;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.form-container{
+    display: inline-block;
+    position: absolute;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #dedddd;
+    background: #FFFFFF;
+}
+.form-container:hover{
+    border: 1px solid #000;
+}
+.form-container .submit-btn:hover{
+    background: #F2F2F2;
+    /* border: 1px solid #000;
+    border-left: 0; */
+}
+
+/* 脚部样式 */
+.page-footer{
+    display: block;
+    text-align: center;
+    padding-bottom: 28px;
+    font-size: 12px;
+    color: #666;
+    line-height: 22px;
+}
+.page-footer a{
+    color: #666;
+}
+.page-footer .footer-info a {
+    color: rgba(0,0,0,.7);
+}
+.page-footer p a {
+    color: rgba(0,0,0,.5);
+}
+.page-footer .footer-info a i{
+    background-position: 0 0;
+    margin: 4px 5px 0 0;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    width: 13px;
+    height: 14px;
+    overflow: hidden;
+    background-image: url(https://dlweb.sogoucdn.com/pcsearch/web/index/images/ico_ft_8795b8d.gif?v=1e99707e);
+    background-repeat: no-repeat;
+}
+.page-footer .footer-info a:hover .icon1{
+    background-position: 0 -15px;
+}
+.page-footer .footer-info .icon2{
+    background-position: 0 -29px;
+}
+.page-footer .footer-info a:hover .icon2{
+    background-position: 0 -44px;
+}
+.page-footer .footer-info:hover .icon3{
+    background-position: 0 -57px;
+}
+.page-footer .footer-info a:hover .icon3{
+    background-position: 0 -72px;
+}
+.page-footer a:hover{
+    text-decoration: none!important;
+    transition: color .2s;
+    color: rgba(0,0,0,.9);
+}
+.page-footer .footer-info .line{
+    width: 1px;
+    height: 12px;
+    background: #e4e4e4;
+    border: 0;
+    display: inline-block;
+    margin: 5px 10px 0;
+    position: relative;
+    top: 2px;
+}
+.first{
+    display: inline-block;
+    padding-left: 74px;
+}
+.last{
+    float: none;
+    display: inline-block;
+}
+.last img{
+    width: 86px;
+    height: 40px;
+    margin-top: 46px;
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-image: url(background.jpg);
+    /* background-image: linear-gradient(#fb3 ,#58a); */
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+    /* background-position: 10px 10px; */
+    /* background-size: 1500px 550px; */
+    /* background-size: contain; */
+    /* background-origin: content-box; */
+    /* 这样的话在padding的区域将没有背景图片及颜色 */
+    /* background-clip: content-box; */ 
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-size: 14px;
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    
+}
+.song-word{
+    position: relative;
+    border: 2px solid #e4e4e4;
+    padding: 10px;
+    line-height: 2;
+}
+.song-word .tag{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    padding: 0 5px;
+    background-color: #666;
+    color: #fff;
+}
+.fixed-section{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.page-title{
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.page-mainer{
+    width: 750px;
+    margin: 20px auto;
+    flex: 1;
+}
+.sub-title{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.page-title span{
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 0;
+}
+.page-mainer .catalog{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.page-mainer .catalog li:before{
+    content: '';
+    display:  inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #999;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.page-mainer .catalog li:after{
+    content: '';
+    display:  inline-block;
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid #999;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.page-header{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #f5f5ff;
+}
+.page-footer{
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+    background-color: #f5f5ff;
+}
+.page-mainer dl dd{
+    display: inline-block;
+    margin-right: 10px;
+}

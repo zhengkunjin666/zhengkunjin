@@ -1,0 +1,47 @@
+/* 定义容器，且定位相对定位 */
+/* 绝对定位的位置是相对于其有相对定位的父元素定位，会一起追寻到body元素 */
+/* 可以尝试注释或者删除容器中的相对定位，再看看效果 */
+.pos-list{
+    position: relative;
+    margin: 100px auto 0;
+    width: 600px;
+    height: 600px;
+    background: #f1f1f1;
+}
+/* 定义项目 */
+.pos-item{
+    width: 200px;
+    height: 200px;
+    border: 5px solid #333;
+    background: #666;
+}
+/* 定义绝对定位 */
+.abs{
+    position: absolute;
+}
+/* 定义第1个绝对定位项目的位置 */
+.abs:nth-child(1){
+    top: 20px;
+    left: 20px;
+}
+/* 定义第2个绝对定位项目的位置 */
+.abs:nth-child(2){
+    top: 40px;
+    left: 40px;
+}
+/* 定义第3个绝对定位项目的位置 */
+.abs:nth-child(3){
+    top: 60px;
+    left: 60px;
+}
+/* 定义第4个绝对定位项目的位置 */
+.abs:nth-child(4){
+    top: 80px;
+    left: 80px;
+}
+/* 定义固定定位项目及位置 */
+.fixed{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
