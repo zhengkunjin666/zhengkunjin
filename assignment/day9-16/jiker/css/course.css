@@ -1,0 +1,491 @@
+/* 页面样式 */
+/* *{
+    padding: 0px;
+    margin: 0px;
+} */
+.course-page{
+    width: 100%;
+    background: #F8FAFC;
+    padding-top: 80px;
+}
+/* 页面头部样式 */
+/* .page-header{
+    width: 100%;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 40;
+}
+.page-header-section{
+    width: 1080px;
+    height: 39px;
+    margin: 10px auto 11px auto;
+}
+.page-header-tag{
+    width: 56px;
+    height: 39px;
+    float: left;
+}
+.page-header-nav{
+    float: left;
+    padding: 11px 0px 13px 33px;
+}
+.header-nav-item{
+    height: 15px;
+    margin-right: 35px;
+    font-size: 15px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 15px;
+    text-decoration: none;
+    float: left;
+} */
+.header-nav-item.active{
+    color: #35B558;
+    /* left: 0;
+    position: relative; */
+}
+.header-nav-item.active::after{
+    background: #35B558;
+    /* content: '';
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    position: absolute;
+    margin: 23px 0px 13px -29px; */
+}
+/* .page-header-avatar{
+    width: 34px;
+    height: 34px;
+    background: #F7F7F7;
+    border-radius: 17px;
+    float: right;
+} */
+/* 页面主体样式 */
+.page-body{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+/* 边栏样式 */
+.page-body-aside{
+    width: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+.catalog-dl{
+    height: 68px;
+    margin: 40px 6px 0px 16px;
+}
+.catalog-dl:first-child{
+    margin: 24px 6px 0px 16px;
+}
+.catalog-dl:last-child{
+    margin: 40px 6px 40px 16px;
+}
+.catalog-dt{
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 16px;
+    cursor: pointer;
+}
+.catalog-dd{
+    height: 38px;
+    margin-top: 14px;
+}
+.catalog-dl span{
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 14px;
+    margin: 0px 20px 10px 0px;
+    float: left;
+    cursor: pointer;
+}
+.catalog-dd-bd:hover{
+    color: #35B558;
+}
+.catalog-dd .catalog-dd-bd-active{
+    color: #35B558;
+}
+.catalog-dl:nth-child(1) .catalog-dd-bd:nth-child(4){
+    margin: 0px 0px 10px 0px;
+}
+.catalog-dl:nth-child(4) .catalog-dd-bd:nth-child(4){
+    margin: 0px 0px 10px 0px;
+}
+.catalog-dl:nth-child(3n) .catalog-dd-bd:nth-child(4){
+    margin-right: 60px;
+}
+.catalog-dl:nth-child(3n) .catalog-dd-bd:nth-child(2){
+    margin: 0px 19px 0px 0px;
+}
+/* 主体样式 */
+.page-body-main{
+    width: 806px;
+    margin-left: 24px;
+}
+/* 课程筛选样式 */
+.course-filter{
+    height: 46px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 3px;
+}
+.course-filter-title{
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 14px;
+    float: left;
+    margin: 16px 0px 16px 20px;
+}
+.course-filter-desc{
+    height: 12px;
+    font-size: 0px;
+    margin: 17px 0px 17px 12px;
+    padding-left: 16px;
+    border-left: 1px solid #999999;
+    float: left;
+}
+.course-filter-desc-text{
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    margin-right: 16px;
+}
+.course-filter-bd{
+    font-size: 0px;
+    float: right;
+    margin: 17px 30px 17px 0px;
+}
+.course-filter-box{
+    width: 61px;
+    height: 12px;
+    font-size: 0px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.course-filter-box:last-child{
+    width: 37px;
+    margin-right: 0px;
+}
+.course-filter-text{
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    display: inline-block;
+}
+.course-filter-arrow{
+    content: '';
+    width: 5.657px;
+    height: 5.657px;
+    border-top: 1px solid #666666;
+    border-right: 1px solid #666666;
+    transform: rotate(135deg);
+    float: right;
+}
+/* 课程列表样式 */
+.course-list{
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-item{
+    width: 258px;
+    height: 240px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.04);
+    margin: 0px 16px 19px 0px;
+    cursor: pointer;
+}
+.course-item:nth-child(3n){
+    margin: 0px 0px 19px 0px;
+}
+.course-item-hd{
+    height: 139px;
+    position: relative;
+}
+.course-item-hd img{
+    width: 258px;
+    height: 139px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    float: left;
+}
+.course-item-tag{
+    width: 42px;
+    height: 20px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 20px;
+    text-align: center;
+    background: linear-gradient(180deg, #E5C676 0%, #E6A23C 100%);
+    position: absolute;
+    margin: -3px 7px 123px 209px;
+}
+.course-item-bd{
+    height: 40px;
+    font-size: 15px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    padding: 13px 16px 0px;
+}
+/* position: absolute;
+优点：可以在相对于最近的定位祖先元素的任意位置进行定位；
+      可随浏览器的缩放而不会改变位置；
+      适合定位一些随祖先元素而改变位置的元素。
+缺点：当两个绝对定位元素在同一行时不会随前一个元素文本增加而移动位置，会对文本进行覆盖；
+      不适合定位一些会改变文本的元素。 */
+/* .course-item-ft{
+    width: 228px;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    padding: 19px 14px 17px 16px;
+    position: relative;
+}
+.course-item-level{
+    background-image: url(./../img/index_pic_level.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    padding-left: 17px;
+}
+.course-item-duration{
+    background-image: url(./../img/index_pic_duration.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 72px;   
+    padding-left: 17px;
+}
+.course-item-people{
+    background-image: url(./../img/index_pic_people.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;    
+    padding-left: 17px;
+} */
+/* display: inline-block;
+优点：允许在元素上设置宽度和高度，且保留上下外边距/内边距，并能位于其他元素旁边；
+      适合设置一些随文本改动而上下外边距/内边距不变的行内块元素。
+缺点：多个行内块元素在同一行时会随着浏览器的缩放而改变位置，需要在父级元素上设置white-space: nowrap;
+      另外行内元素之间会存在一定的间距，需要在父级元素上设置font-size: 0px;*/
+/* .course-item-ft{
+    width: 228px;
+    height: 12px;
+    padding: 19px 14px 17px 16px;
+    white-space: nowrap;
+    font-size: 0px;
+}
+.course-item-level{
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    background-image: url(./../img/index_pic_level.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-left: 17px;
+}
+.course-item-duration{
+    width: 105px;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    background-image: url(./../img/index_pic_duration.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-left: 17px;
+    margin-left: 15px;
+}
+.course-item-people{
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    background-image: url(./../img/index_pic_people.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding-left: 17px;
+} */
+/* display: flex;
+优点：任何容器都可以定义为 flex 布局，包括行内元素；
+      并能设置容器属性使其子元素在容器内的不同方向进行布局。
+缺点：设置 flex 布局以后，子元素的 float 、clear 、vertical-align 属性将失效。*/
+/* .course-item-ft{
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    padding: 19px 14px 17px 16px;
+    display: flex;
+}
+.course-item-level{
+    background-image: url(./../img/index_pic_level.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+    white-space: nowrap;
+}
+.course-item-duration{
+    width: 105px;
+    height: 12px;
+    background-image: url(./../img/index_pic_duration.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+    margin-left: 15px;
+}
+.course-item-people{
+    background-image: url(./../img/index_pic_people.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+} */
+/* float:left/right;
+优点：定义元素在哪个方向浮动并会会生成一个块级框；
+      并能设置容器属性使其子元素在容器内的不同方向进行布局。
+缺点：假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止；
+      设置了float属性的元素将处于悬浮状态，不占父级的高度。 */
+.course-item-ft{
+    width: 228px;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 12px;
+    padding: 19px 14px 17px 16px;
+}
+.course-item-level{
+    background-image: url(./../img/index_pic_level.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+    float: left;
+}
+.course-item-duration{
+    background-image: url(./../img/index_pic_duration.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+    margin-left: 15px;
+    float: left;
+}
+.course-item-people{
+    background-image: url(./../img/index_pic_people.jpg);
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+    float: right;
+}
+/* 分页样式 */
+.course-pagination{
+    width: 750px;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 20px auto 0px auto;
+}
+.pagination-text{
+    height: 32px;
+    background: #FFFFFF;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999999;
+    line-height: 32px;
+    text-decoration: none;
+    padding: 8px 12.2px;
+    margin: 0 5px 0px 0px;
+}
+.pagination-text.pagination-front{
+    padding: 8px 13px;
+}
+.pagination-text.pagination-upper{
+    padding: 8px 18px;
+}
+.pagination-text.pagination-button-active{
+    background: #35B558;
+    color: #FFFFFF;
+}
+.pagination-text.pagination-etc{
+    background: none;
+}
+.pagination-text.pagination-down{
+    padding: 8px 7px;
+}
+.pagination-text.pagination-last{
+    padding: 8px 13px;
+}
+.pagination-text.pagination-total{
+    background: none;
+    color: #333333;
+    padding: 8px 15px;
+}
+.pagination-text.pagination-current{
+    background: none;
+    color: #333333;
+    padding: 8px 6px 4px 8px;
+}
+.pagination-text.pagination-number{
+    width: 35px;
+    height: 22px;
+    padding: 0;
+    text-align: center;
+    border: none;
+}
+.pagination-text.pagination-pages{
+    background: none;
+    color: #333333;
+    padding: 5px 5px 5px 4px;
+}
+.pagination-text.pagination-define{
+    height: 22px;
+    color: #999999;
+    padding: 5px 4px;
+}
+
+
+
+
